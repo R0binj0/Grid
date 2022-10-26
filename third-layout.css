@@ -29,10 +29,15 @@ p, header{
 }
 article{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr;
     width:auto;
     padding:1rem;
+}
+p , article{
+    display: grid;
+    place-items:center;
+    grid-column-start:2;
 }
 img{
     grid-row-start:3;
